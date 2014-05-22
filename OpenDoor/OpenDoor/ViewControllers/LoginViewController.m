@@ -44,7 +44,7 @@
     // Do any additional setup after loading the view from its nib.
     self.title = @"Open Door";
     
-    [self userLogin];
+    //[self userLogin];
 }
 
 - (void)didReceiveMemoryWarning
@@ -54,8 +54,8 @@
 }
 
 -(void)userLogin{
-    txtUser.text = @"Arnel";
-    txtPassword.text = @"09-08-81";
+    //txtUser.text = @"Arnel";
+    //txtPassword.text = @"09-08-81";
     [PFUser logInWithUsernameInBackground:txtUser.text password:txtPassword.text
                                     block:^(PFUser *user, NSError *error) {
                                         if (user) {

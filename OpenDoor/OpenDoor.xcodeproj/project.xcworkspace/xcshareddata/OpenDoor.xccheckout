@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>C511BA26-751D-4B29-BF27-CF163171D947</string>
+	<string>EEA759CC-9DD4-4B18-AF7C-685EA64A3311</string>
 	<key>IDESourceControlProjectName</key>
 	<string>OpenDoor</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>49562B67-A7DE-4EAD-A55D-E66D7F13A3E2</key>
-		<string>https://github.com/newtoncircus/opendoor-mobile.git</string>
+		<key>76C7FCEE-B82C-422C-B2E0-E06C5BCFB284</key>
+		<string>https://github.com/arperez08/CodingChallenge.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>OpenDoor/OpenDoor.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>49562B67-A7DE-4EAD-A55D-E66D7F13A3E2</key>
+		<key>76C7FCEE-B82C-422C-B2E0-E06C5BCFB284</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/newtoncircus/opendoor-mobile.git</string>
+	<string>https://github.com/arperez08/CodingChallenge.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>49562B67-A7DE-4EAD-A55D-E66D7F13A3E2</string>
+	<string>76C7FCEE-B82C-422C-B2E0-E06C5BCFB284</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>49562B67-A7DE-4EAD-A55D-E66D7F13A3E2</string>
+			<string>76C7FCEE-B82C-422C-B2E0-E06C5BCFB284</string>
 			<key>IDESourceControlWCCName</key>
-			<string>opendoor-mobile</string>
+			<string>CodingChallenge</string>
 		</dict>
 	</array>
 </dict>
