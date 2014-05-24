@@ -93,7 +93,8 @@
     viewController4.tabBarItem.image = [UIImage imageNamed:@"message"];
     
     self.tabBarController = [[UITabBarController alloc] init];
-    self.tabBarController.viewControllers = @[viewController1, viewController2, viewController3, viewController4];
+    //self.tabBarController.viewControllers = @[viewController1, viewController2, viewController3, viewController4];
+    self.tabBarController.viewControllers = @[viewController1, viewController3, viewController4];
     [self.navigationController setNavigationBarHidden:YES];
     [self.navigationController pushViewController:self.tabBarController animated:YES];
 }

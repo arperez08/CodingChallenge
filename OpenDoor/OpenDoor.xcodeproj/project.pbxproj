@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1438B629192E4855004D6ABB /* bg_box.png in Resources */ = {isa = PBXBuildFile; fileRef = 1438B628192E4855004D6ABB /* bg_box.png */; };
+		1438B62A192E5168004D6ABB /* AccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1438B62C192E5168004D6ABB /* AccountViewController.xib */; };
+		1443BBB7192F1B1500FAFC9D /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 1443BBB6192F1B1500FAFC9D /* button.png */; };
+		1443BBB9192F1BD300FAFC9D /* top_bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 1443BBB8192F1BD300FAFC9D /* top_bar.png */; };
 		14493CF8192DC04A00CD6E29 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 14493CDB192DC04A00CD6E29 /* MBProgressHUD.m */; };
 		14493CF9192DC04A00CD6E29 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 14493CDD192DC04A00CD6E29 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		14493CFA192DC04A00CD6E29 /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 14493CE0192DC04A00CD6E29 /* NSObject+SBJson.m */; };
@@ -52,7 +56,6 @@
 		144A151F192CF50500DFE84D /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 144A1518192CF50500DFE84D /* LoginViewController.m */; };
 		144A1520192CF50500DFE84D /* MessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 144A151A192CF50500DFE84D /* MessagesViewController.m */; };
 		144A1521192CF50500DFE84D /* WorkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 144A151C192CF50500DFE84D /* WorkViewController.m */; };
-		144A1528192CF51E00DFE84D /* AccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 144A1523192CF51E00DFE84D /* AccountViewController.xib */; };
 		144A1529192CF51E00DFE84D /* HistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 144A1524192CF51E00DFE84D /* HistoryViewController.xib */; };
 		144A152A192CF51E00DFE84D /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 144A1525192CF51E00DFE84D /* LoginViewController.xib */; };
 		144A152B192CF51E00DFE84D /* MessagesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 144A1526192CF51E00DFE84D /* MessagesViewController.xib */; };
@@ -74,6 +77,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1438B628192E4855004D6ABB /* bg_box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_box.png; sourceTree = "<group>"; };
+		1438B62B192E5168004D6ABB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AccountViewController.xib; sourceTree = "<group>"; };
+		1443BBB6192F1B1500FAFC9D /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
+		1443BBB8192F1BD300FAFC9D /* top_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = top_bar.png; sourceTree = "<group>"; };
 		14493CDA192DC04A00CD6E29 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		14493CDB192DC04A00CD6E29 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		14493CDC192DC04A00CD6E29 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
@@ -143,7 +150,6 @@
 		144A151A192CF50500DFE84D /* MessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessagesViewController.m; sourceTree = "<group>"; };
 		144A151B192CF50500DFE84D /* WorkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkViewController.h; sourceTree = "<group>"; };
 		144A151C192CF50500DFE84D /* WorkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkViewController.m; sourceTree = "<group>"; };
-		144A1523192CF51E00DFE84D /* AccountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccountViewController.xib; sourceTree = "<group>"; };
 		144A1524192CF51E00DFE84D /* HistoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryViewController.xib; sourceTree = "<group>"; };
 		144A1525192CF51E00DFE84D /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		144A1526192CF51E00DFE84D /* MessagesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessagesViewController.xib; sourceTree = "<group>"; };
@@ -352,7 +358,7 @@
 		144A1522192CF51E00DFE84D /* Nibs */ = {
 			isa = PBXGroup;
 			children = (
-				144A1523192CF51E00DFE84D /* AccountViewController.xib */,
+				1438B62C192E5168004D6ABB /* AccountViewController.xib */,
 				144A1524192CF51E00DFE84D /* HistoryViewController.xib */,
 				144A1525192CF51E00DFE84D /* LoginViewController.xib */,
 				144A1526192CF51E00DFE84D /* MessagesViewController.xib */,
@@ -364,6 +370,9 @@
 		144A152D192CFBFE00DFE84D /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				1443BBB8192F1BD300FAFC9D /* top_bar.png */,
+				1443BBB6192F1B1500FAFC9D /* button.png */,
+				1438B628192E4855004D6ABB /* bg_box.png */,
 				144A152E192CFBFE00DFE84D /* Account.png */,
 				144A152F192CFBFE00DFE84D /* History.png */,
 				144A1530192CFBFE00DFE84D /* message.png */,
@@ -448,15 +457,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				144A1533192CFBFE00DFE84D /* History.png in Resources */,
+				1443BBB9192F1BD300FAFC9D /* top_bar.png in Resources */,
 				144A152B192CF51E00DFE84D /* MessagesViewController.xib in Resources */,
 				144A152A192CF51E00DFE84D /* LoginViewController.xib in Resources */,
 				144A14BC192CF1EE00DFE84D /* InfoPlist.strings in Resources */,
 				144A1532192CFBFE00DFE84D /* Account.png in Resources */,
 				144A152C192CF51E00DFE84D /* WorkViewController.xib in Resources */,
-				144A1528192CF51E00DFE84D /* AccountViewController.xib in Resources */,
+				1438B629192E4855004D6ABB /* bg_box.png in Resources */,
+				1438B62A192E5168004D6ABB /* AccountViewController.xib in Resources */,
 				144A1535192CFBFE00DFE84D /* work.png in Resources */,
 				144A14C4192CF1EE00DFE84D /* Images.xcassets in Resources */,
 				144A1529192CF51E00DFE84D /* HistoryViewController.xib in Resources */,
+				1443BBB7192F1B1500FAFC9D /* button.png in Resources */,
 				144A1534192CFBFE00DFE84D /* message.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -519,6 +531,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		1438B62C192E5168004D6ABB /* AccountViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1438B62B192E5168004D6ABB /* en */,
+			);
+			name = AccountViewController.xib;
+			sourceTree = "<group>";
+		};
 		144A14BA192CF1EE00DFE84D /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (

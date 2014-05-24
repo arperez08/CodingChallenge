@@ -15,7 +15,6 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-   
     // ****************************************************************************
     // Uncomment and fill in with your Parse credentials:
     [Parse setApplicationId:@"iRvjigqtqgGRZT7JZihLP9tsRHUEsuwlNR9uYqC3" clientKey:@"KBfojXYU68Oh4XoFoG3gKHDQYaM2zU6DjIBMT8MZ"];
@@ -26,14 +25,10 @@
     // ****************************************************************************
     
     [PFUser enableAutomaticUser];
-    
     PFACL *defaultACL = [PFACL ACL];
-    
     // If you would like all objects to be private by default, remove this line.
     [defaultACL setPublicReadAccess:YES];
-    
     [PFACL setDefaultACL:defaultACL withAccessForCurrentUser:YES];
-    
     
     self.navController = [[UINavigationController alloc] initWithRootViewController:[[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:nil]];
     [self.navController setNavigationBarHidden:YES];
