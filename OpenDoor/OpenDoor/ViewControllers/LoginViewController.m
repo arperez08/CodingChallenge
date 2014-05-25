@@ -79,11 +79,10 @@
     NSLog(@"%@",userDetails);
     
     //WorkViewController *viewController1 = [[WorkViewController alloc] initWithNibName:@"WorkViewController" bundle:nil];
+    MyTableController *viewController1 = [[MyTableController alloc] init];
     HistoryViewController *viewController2 = [[HistoryViewController alloc] initWithNibName:@"HistoryViewController" bundle:nil];
     AccountViewController *viewController3 = [[AccountViewController alloc] initWithNibName:@"AccountViewController" bundle:nil];
     MessagesViewController *viewController4 = [[MessagesViewController alloc] initWithNibName:@"MessagesViewController" bundle:nil];
-    
-    MyTableController *viewController1 = [[MyTableController alloc] init];
     
     viewController1.title = @"Work";
     viewController1.tabBarItem.image = [UIImage imageNamed:@"work"];
