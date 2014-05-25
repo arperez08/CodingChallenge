@@ -12,6 +12,7 @@
 #import "AccountViewController.h"
 #import "HistoryViewController.h"
 #import "MessagesViewController.h"
+#import "MyTableController.h"
 
 @interface LoginViewController ()
 
@@ -77,10 +78,12 @@
 - (void)DoNavigate{
     NSLog(@"%@",userDetails);
     
-    WorkViewController *viewController1 = [[WorkViewController alloc] initWithNibName:@"WorkViewController" bundle:nil];
+    //WorkViewController *viewController1 = [[WorkViewController alloc] initWithNibName:@"WorkViewController" bundle:nil];
     HistoryViewController *viewController2 = [[HistoryViewController alloc] initWithNibName:@"HistoryViewController" bundle:nil];
     AccountViewController *viewController3 = [[AccountViewController alloc] initWithNibName:@"AccountViewController" bundle:nil];
     MessagesViewController *viewController4 = [[MessagesViewController alloc] initWithNibName:@"MessagesViewController" bundle:nil];
+    
+    MyTableController *viewController1 = [[MyTableController alloc] init];
     
     viewController1.title = @"Work";
     viewController1.tabBarItem.image = [UIImage imageNamed:@"work"];
@@ -91,6 +94,7 @@
     viewController3.userDetails = userDetails;
     viewController4.title = @"Messages";
     viewController4.tabBarItem.image = [UIImage imageNamed:@"message"];
+    viewController4.userDetails = userDetails;
     
     self.tabBarController = [[UITabBarController alloc] init];
     //self.tabBarController.viewControllers = @[viewController1, viewController2, viewController3, viewController4];

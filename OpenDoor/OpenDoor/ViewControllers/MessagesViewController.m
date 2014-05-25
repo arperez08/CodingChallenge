@@ -7,12 +7,14 @@
 //
 
 #import "MessagesViewController.h"
+#import <Parse/Parse.h>
 
 @interface MessagesViewController ()
 
 @end
 
 @implementation MessagesViewController
+@synthesize userDetails;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,7 +30,31 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.title = @"Messages";
+
+    NSString *username = [userDetails objectForKey:@"username"];
+   
+    PFQuery *query = [PFQuery queryWithClassName:@"User"];
+    [query whereKey:@"username" equalTo:username];
+    
+    NSArray *userData = [query findObjects];
+    NSLog(@"count: %d %@",[userData count], username);
+    
+    //NSMutableDictionary *dictUserData= [userData objectAtIndex:0];
+    //NSString *userObjectId = [dictUserData objectForKey:@"objectId"];
+    //NSLog(@"userObjectId = %@",userObjectId);
+    //[self getMessages:userObjectId];
+    
 }
+
+-(void) getMessages: (NSString *)userObjectId{
+    PFQuery *query = [PFQuery queryWithClassName:@"Message"];
+    [query whereKey:@"user_id" equalTo:userObjectId];
+    queryResults = [[NSArray alloc] init];
+    queryResults = [query findObjects];
+    NSLog(@"%@",[queryResults objectAtIndex:0]);
+
+}
+
 
 - (void)didReceiveMemoryWarning
 {

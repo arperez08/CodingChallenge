@@ -7,6 +7,7 @@
 //
 
 #import "AccountViewController.h"
+#import <Parse/Parse.h>
 
 @interface AccountViewController ()
 
@@ -38,10 +39,16 @@
     lblFname.text = [userDetails objectForKey:@"first_name"];
     lblLname.text = [userDetails objectForKey:@"last_name"];
     PFGeoPoint *lastLocation = [userDetails objectForKey:@"last_location"];
-    
+    //PFObject *accounts = [userDetails objectForKey:@"accounts"];
     [self UserGeoLocation:lastLocation];
+
     
 }
+
+-(void) getHistory{
+    
+}
+
 
 -(void) UserGeoLocation:(PFGeoPoint*)lastLocation {
     PFQuery *query = [PFQuery queryWithClassName:@"User_Fav_Location"];

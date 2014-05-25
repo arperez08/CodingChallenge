@@ -9,8 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "MBProgressHUD.h"
 
-@interface WorkViewController : UIViewController {
+@interface WorkViewController : UIViewController{
     NSArray *queryResults;
     MBProgressHUD *HUB;
 }
+
+@property (nonatomic, strong) IBOutlet UITableView *tblActiveWorks;
+
 @end
