@@ -28,6 +28,10 @@
                     </label>
                 </subviews>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="lblLocation" destination="C9y-xr-nao" id="hG6-c0-1gF"/>
+                <outlet property="lblTitle" destination="YCX-UC-NIN" id="5Nf-cA-rGZ"/>
+            </connections>
         </tableViewCell>
     </objects>
 </document>

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "MBProgressHUD.h"
 
-@interface WorkViewController : UIViewController{
+@interface WorkViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>{
     NSArray *queryResults;
     MBProgressHUD *HUB;
 }

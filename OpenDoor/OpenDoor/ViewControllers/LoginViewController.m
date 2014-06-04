@@ -55,16 +55,15 @@
 }
 
 -(void)userLogin{
-    //txtUser.text = @"Arnel";
-    //txtPassword.text = @"09-08-81";
     [PFUser logInWithUsernameInBackground:txtUser.text password:txtPassword.text
                                     block:^(PFUser *user, NSError *error) {
                                         if (user) {
                                             // Do stuff after successful login.
                                             userDetails = [[PFUser alloc] init];
                                             userDetails = user;
-                                            NSLog(@"userEmail:%@",[user objectForKey:@"email"]);
-                                            NSLog(@"userPhone:%@",[user objectForKey:@"phone"]);
+                                            
+                                            NSLog(@"%@", userDetails.username);
+
                                             [self DoNavigate];
                                         }
                                         else {
@@ -78,8 +77,8 @@
 - (void)DoNavigate{
     NSLog(@"%@",userDetails);
     
-    //WorkViewController *viewController1 = [[WorkViewController alloc] initWithNibName:@"WorkViewController" bundle:nil];
-    MyTableController *viewController1 = [[MyTableController alloc] init];
+    WorkViewController *viewController1 = [[WorkViewController alloc] initWithNibName:@"WorkViewController" bundle:nil];
+    //MyTableController *viewController1 = [[MyTableController alloc] init];
     HistoryViewController *viewController2 = [[HistoryViewController alloc] initWithNibName:@"HistoryViewController" bundle:nil];
     AccountViewController *viewController3 = [[AccountViewController alloc] initWithNibName:@"AccountViewController" bundle:nil];
     MessagesViewController *viewController4 = [[MessagesViewController alloc] initWithNibName:@"MessagesViewController" bundle:nil];
@@ -109,10 +108,11 @@
     }
     else
     {
-        HUB = [[MBProgressHUD alloc]initWithView:self.view];
-        [self.view addSubview:HUB];
-        HUB.labelText = @"Logging in...";
-        [HUB showWhileExecuting:@selector(userLogin) onTarget:self withObject:nil animated:YES];
+        [self userLogin];
+        //HUB = [[MBProgressHUD alloc]initWithView:self.view];
+        //[self.view addSubview:HUB];
+        //HUB.labelText = @"Logging in...";
+        //[HUB showWhileExecuting:@selector(userLogin) onTarget:self withObject:nil animated:YES];
     }
 }
 

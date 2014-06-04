@@ -28,4 +28,5 @@
 }
 @property (strong, nonatomic) PFUser *userDetails;
 @property (nonatomic, retain) IBOutlet UIScrollView * scrollView;
+- (IBAction)btnLogout:(id)sender;
 @end

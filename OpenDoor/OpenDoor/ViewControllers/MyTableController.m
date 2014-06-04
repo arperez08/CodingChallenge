@@ -7,6 +7,8 @@
 //
 
 #import "MyTableController.h"
+#import "WorkDetailsViewController.h"
+
 
 @implementation MyTableController
 
@@ -32,7 +34,7 @@
         self.paginationEnabled = YES;
         
         // The number of objects to show per page
-        self.objectsPerPage = 10;
+        self.objectsPerPage = 5;
     }
     return self;
 }
@@ -105,8 +107,8 @@
 }
 
 
- // Override to customize what kind of query to perform on the class. The default is to query for
- // all objects ordered by createdAt descending.
+// Override to customize what kind of query to perform on the class. The default is to query for
+// all objects ordered by createdAt descending.
 //- (PFQuery *)queryForTable {
 //    PFQuery *query = [PFQuery queryWithClassName:self.parseClassName];
 // 
@@ -133,6 +135,15 @@
     cell.detailTextLabel.text = [object objectForKey:@"loc_address"];
     return cell;
 }
+
+#pragma mark - Table view delegate
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [super tableView:tableView didSelectRowAtIndexPath:indexPath];
+	WorkDetailsViewController *wdvc = [[WorkDetailsViewController alloc] initWithNibName:@"WorkDetailsViewController" bundle:[NSBundle mainBundle]];
+	[self.navigationController pushViewController:wdvc animated:YES];
+}
+
 
 
 /*
@@ -202,12 +213,6 @@
  }
  */
 
-#pragma mark - Table view delegate
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    [super tableView:tableView didSelectRowAtIndexPath:indexPath];
-}
 
 
 @end

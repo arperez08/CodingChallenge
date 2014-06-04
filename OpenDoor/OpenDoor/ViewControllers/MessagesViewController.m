@@ -8,6 +8,8 @@
 
 #import "MessagesViewController.h"
 #import <Parse/Parse.h>
+#import "MessageTableViewCell.h"
+#import "MessageDetailsViewController.h"
 
 @interface MessagesViewController ()
 
@@ -30,36 +32,61 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.title = @"Messages";
-
-    NSString *username = [userDetails objectForKey:@"username"];
-   
-    PFQuery *query = [PFQuery queryWithClassName:@"User"];
-    [query whereKey:@"username" equalTo:username];
     
-    NSArray *userData = [query findObjects];
-    NSLog(@"count: %d %@",[userData count], username);
-    
-    //NSMutableDictionary *dictUserData= [userData objectAtIndex:0];
-    //NSString *userObjectId = [dictUserData objectForKey:@"objectId"];
-    //NSLog(@"userObjectId = %@",userObjectId);
-    //[self getMessages:userObjectId];
-    
-}
-
--(void) getMessages: (NSString *)userObjectId{
-    PFQuery *query = [PFQuery queryWithClassName:@"Message"];
-    [query whereKey:@"user_id" equalTo:userObjectId];
+    PFQuery *query = [PFQuery queryWithClassName:@"Message_Thread"];
     queryResults = [[NSArray alloc] init];
     queryResults = [query findObjects];
-    NSLog(@"%@",[queryResults objectAtIndex:0]);
 
 }
-
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section
+{
+    return nil;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return  1;
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return [queryResults count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    PFObject *currentObject = [queryResults objectAtIndex:indexPath.section];
+    
+    static NSString *simpleTableIdentifier = @"Cell";
+    MessageTableViewCell *cell = (MessageTableViewCell *)[tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    if (cell == nil){
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"MessageTableViewCell" owner:self options:nil];
+        cell = [nib objectAtIndex:0];
+    }
+    
+    NSLog(@"%@",currentObject);
+    cell.lblTitle.text = [currentObject objectForKey:@"title"];
+    cell.lblCreated.text = [NSString stringWithFormat:@"%@",currentObject.createdAt];
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    PFObject *currentObject = [queryResults objectAtIndex:indexPath.section];
+    
+	MessageDetailsViewController *wdvc = [[MessageDetailsViewController alloc] initWithNibName:@"MessageDetailsViewController" bundle:[NSBundle mainBundle]];
+    
+    wdvc.currentObject =currentObject;
+    
+    [self.navigationController setNavigationBarHidden:NO];
+	[self.navigationController pushViewController:wdvc animated:YES];
+}
+
+
 
 @end

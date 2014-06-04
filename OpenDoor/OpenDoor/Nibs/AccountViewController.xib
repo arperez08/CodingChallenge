@@ -131,6 +131,9 @@
                             <state key="normal" title="Logout" backgroundImage="button.png">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="btnLogout:" destination="-1" eventType="touchUpInside" id="6we-Zi-sY6"/>
+                            </connections>
                         </button>
                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lblMobNum" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ck0-22-PaU">
                             <rect key="frame" x="91" y="36" width="224" height="21"/>

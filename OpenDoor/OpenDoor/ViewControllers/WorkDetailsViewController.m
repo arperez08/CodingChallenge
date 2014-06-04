@@ -13,6 +13,7 @@
 @end
 
 @implementation WorkDetailsViewController
+@synthesize currentObject;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,6 +28,13 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+
+    lblTitle.text = [currentObject objectForKey:@"title"];
+    NSString *strEarnings = [NSString stringWithFormat:@"%@ %@",[currentObject objectForKey:@"earn_currency"],[currentObject objectForKey:@"earn"]];
+    lblEarn.text = strEarnings;
+    lblPost.text = [NSString stringWithFormat:@"%@",[currentObject objectForKey:@"post_date"]];
+    lblExpire.text = [NSString stringWithFormat:@"%@",[currentObject objectForKey:@"expiry_date"]];
+    lbldesc.text = [NSString stringWithFormat:@"%@",[currentObject objectForKey:@"desc"]];
 }
 
 - (void)didReceiveMemoryWarning

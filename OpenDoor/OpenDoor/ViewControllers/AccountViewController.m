@@ -38,10 +38,11 @@
     lblMobNum.text = [NSString stringWithFormat:@"%@",[userDetails objectForKey:@"username"]];
     lblFname.text = [userDetails objectForKey:@"first_name"];
     lblLname.text = [userDetails objectForKey:@"last_name"];
+    
     PFGeoPoint *lastLocation = [userDetails objectForKey:@"last_location"];
-    //PFObject *accounts = [userDetails objectForKey:@"accounts"];
     [self UserGeoLocation:lastLocation];
 
+    //PFObject *accounts = [userDetails objectForKey:@"accounts"];
     
 }
 
@@ -79,4 +80,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)btnLogout:(id)sender {
+    
+    
+    
+}
 @end

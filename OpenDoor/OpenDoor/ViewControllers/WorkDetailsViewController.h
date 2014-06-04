@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
 
-@interface WorkDetailsViewController : UIViewController
-
+@interface WorkDetailsViewController : UIViewController{
+    PFObject *currentObject;
+    
+    IBOutlet UILabel *lblTitle;
+    IBOutlet UILabel *lblEarn;
+    IBOutlet UILabel *lblPost;
+    IBOutlet UILabel *lblExpire;
+    IBOutlet UILabel *lbldesc;
+    
+}
+@property (strong, nonatomic) PFObject *currentObject;
 @end

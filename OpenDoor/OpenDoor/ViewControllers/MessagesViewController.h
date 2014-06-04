@@ -11,9 +11,10 @@
 #import "MBProgressHUD.h"
 
 
-@interface MessagesViewController : UIViewController{
+@interface MessagesViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>{
     MBProgressHUD *HUB;
     NSArray *queryResults;
 }
 @property (strong, nonatomic) PFUser *userDetails;
+@property (nonatomic, strong) IBOutlet UITableView *tblMessages;
 @end

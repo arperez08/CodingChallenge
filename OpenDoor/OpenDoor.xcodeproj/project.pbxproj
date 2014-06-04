@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14123983193F243B00B3A880 /* MessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 14123981193F243B00B3A880 /* MessageTableViewCell.m */; };
+		14123984193F243B00B3A880 /* MessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14123982193F243B00B3A880 /* MessageTableViewCell.xib */; };
+		14123988193F27B200B3A880 /* MessageDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14123986193F27B200B3A880 /* MessageDetailsViewController.m */; };
+		14123989193F27B200B3A880 /* MessageDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14123987193F27B200B3A880 /* MessageDetailsViewController.xib */; };
+		1412398D193F35A900B3A880 /* MessagesDataTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1412398B193F35A900B3A880 /* MessagesDataTableViewCell.m */; };
+		1412398E193F35A900B3A880 /* MessagesDataTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1412398C193F35A900B3A880 /* MessagesDataTableViewCell.xib */; };
 		1438B629192E4855004D6ABB /* bg_box.png in Resources */ = {isa = PBXBuildFile; fileRef = 1438B628192E4855004D6ABB /* bg_box.png */; };
 		1443BBB7192F1B1500FAFC9D /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 1443BBB6192F1B1500FAFC9D /* button.png */; };
 		1443BBB9192F1BD300FAFC9D /* top_bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 1443BBB8192F1BD300FAFC9D /* top_bar.png */; };
@@ -82,6 +88,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14123980193F243B00B3A880 /* MessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageTableViewCell.h; sourceTree = "<group>"; };
+		14123981193F243B00B3A880 /* MessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageTableViewCell.m; sourceTree = "<group>"; };
+		14123982193F243B00B3A880 /* MessageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MessageTableViewCell.xib; path = ../ViewControllers/MessageTableViewCell.xib; sourceTree = "<group>"; };
+		14123985193F27B200B3A880 /* MessageDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageDetailsViewController.h; sourceTree = "<group>"; };
+		14123986193F27B200B3A880 /* MessageDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageDetailsViewController.m; sourceTree = "<group>"; };
+		14123987193F27B200B3A880 /* MessageDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MessageDetailsViewController.xib; path = ../ViewControllers/MessageDetailsViewController.xib; sourceTree = "<group>"; };
+		1412398A193F35A900B3A880 /* MessagesDataTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagesDataTableViewCell.h; sourceTree = "<group>"; };
+		1412398B193F35A900B3A880 /* MessagesDataTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessagesDataTableViewCell.m; sourceTree = "<group>"; };
+		1412398C193F35A900B3A880 /* MessagesDataTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MessagesDataTableViewCell.xib; path = ../ViewControllers/MessagesDataTableViewCell.xib; sourceTree = "<group>"; };
 		1438B628192E4855004D6ABB /* bg_box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_box.png; sourceTree = "<group>"; };
 		1443BBB6192F1B1500FAFC9D /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
 		1443BBB8192F1BD300FAFC9D /* top_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = top_bar.png; sourceTree = "<group>"; };
@@ -360,8 +375,12 @@
 				144A1516192CF50500DFE84D /* HistoryViewController.m */,
 				144A1517192CF50500DFE84D /* LoginViewController.h */,
 				144A1518192CF50500DFE84D /* LoginViewController.m */,
+				14123985193F27B200B3A880 /* MessageDetailsViewController.h */,
+				14123986193F27B200B3A880 /* MessageDetailsViewController.m */,
 				144A1519192CF50500DFE84D /* MessagesViewController.h */,
 				144A151A192CF50500DFE84D /* MessagesViewController.m */,
+				14123980193F243B00B3A880 /* MessageTableViewCell.h */,
+				14123981193F243B00B3A880 /* MessageTableViewCell.m */,
 				145CACA119321B44000F93EC /* MyTableController.h */,
 				145CACA219321B44000F93EC /* MyTableController.m */,
 				1457C09019321236005840CD /* WorkDetailsViewController.h */,
@@ -370,6 +389,8 @@
 				1457C08C193211CA005840CD /* WorkTableViewCell.m */,
 				144A151B192CF50500DFE84D /* WorkViewController.h */,
 				144A151C192CF50500DFE84D /* WorkViewController.m */,
+				1412398A193F35A900B3A880 /* MessagesDataTableViewCell.h */,
+				1412398B193F35A900B3A880 /* MessagesDataTableViewCell.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -377,6 +398,7 @@
 		144A1522192CF51E00DFE84D /* Nibs */ = {
 			isa = PBXGroup;
 			children = (
+				14123982193F243B00B3A880 /* MessageTableViewCell.xib */,
 				1457C099193212E5005840CD /* AccountViewController.xib */,
 				144A1524192CF51E00DFE84D /* HistoryViewController.xib */,
 				144A1525192CF51E00DFE84D /* LoginViewController.xib */,
@@ -384,6 +406,8 @@
 				1457C095193212CD005840CD /* WorkDetailsViewController.xib */,
 				1457C096193212CD005840CD /* WorkTableViewCell.xib */,
 				144A1527192CF51E00DFE84D /* WorkViewController.xib */,
+				14123987193F27B200B3A880 /* MessageDetailsViewController.xib */,
+				1412398C193F35A900B3A880 /* MessagesDataTableViewCell.xib */,
 			);
 			path = Nibs;
 			sourceTree = "<group>";
@@ -491,7 +515,10 @@
 				1457C098193212CD005840CD /* WorkTableViewCell.xib in Resources */,
 				144A14C4192CF1EE00DFE84D /* Images.xcassets in Resources */,
 				144A1529192CF51E00DFE84D /* HistoryViewController.xib in Resources */,
+				14123984193F243B00B3A880 /* MessageTableViewCell.xib in Resources */,
+				1412398E193F35A900B3A880 /* MessagesDataTableViewCell.xib in Resources */,
 				1443BBB7192F1B1500FAFC9D /* button.png in Resources */,
+				14123989193F27B200B3A880 /* MessageDetailsViewController.xib in Resources */,
 				144A1534192CFBFE00DFE84D /* message.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,8 +543,10 @@
 				14493CFE192DC04A00CD6E29 /* SBJsonStreamParserAdapter.m in Sources */,
 				14493D04192DC04A00CD6E29 /* SBJsonUTF8Stream.m in Sources */,
 				144A151D192CF50500DFE84D /* AccountViewController.m in Sources */,
+				1412398D193F35A900B3A880 /* MessagesDataTableViewCell.m in Sources */,
 				14493CFF192DC04A00CD6E29 /* SBJsonStreamParserState.m in Sources */,
 				144A1520192CF50500DFE84D /* MessagesViewController.m in Sources */,
+				14123983193F243B00B3A880 /* MessageTableViewCell.m in Sources */,
 				14493D05192DC04A00CD6E29 /* SBJsonWriter.m in Sources */,
 				14493CFC192DC04A00CD6E29 /* SBJsonStreamParser.m in Sources */,
 				144A1521192CF50500DFE84D /* WorkViewController.m in Sources */,
@@ -533,6 +562,7 @@
 				14493CF9192DC04A00CD6E29 /* Reachability.m in Sources */,
 				1457C08E193211CA005840CD /* WorkTableViewCell.m in Sources */,
 				14493CFD192DC04A00CD6E29 /* SBJsonStreamParserAccumulator.m in Sources */,
+				14123988193F27B200B3A880 /* MessageDetailsViewController.m in Sources */,
 				14493CFA192DC04A00CD6E29 /* NSObject+SBJson.m in Sources */,
 				14493CF8192DC04A00CD6E29 /* MBProgressHUD.m in Sources */,
 			);
